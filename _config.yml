@@ -6,7 +6,8 @@ repository: Git repository where your resume will be hosted, only required if yo
 version: 2
 
 # Personal info
-name: 허재영
+# 내 정보에 맞게 수정
+name: heo
 title: Your job title
 email: Your email (optional)
 # email_title: Email (Email title override)
@@ -19,6 +20,7 @@ website: Your website (eg. https://google.com)(optional)
 darkmode: true
 
 # Social links
+# 개인 외부 사이트 연결
 twitter_username: jekyllrb
 github_username:  jekyll
 stackoverflow_username: "00000001"
@@ -50,8 +52,10 @@ additional_links:
 
 # About Section
 # about_title: About Me (Use this to override about section title)
-# 이미지 경로 적어주기
+# 이미지 경로 적어주기 - 디렉토리 만들어줘야 함
 about_profile_image: Directory of profile image (eg. images/profile.jpg)
+
+# 소개란
 about_content: | # this will include new lines to allow paragraphs
   Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
 
@@ -61,10 +65,11 @@ about_content: | # this will include new lines to allow paragraphs
     - <a href="google.com">Links</a>
     - Images ![alt text](/images/landscape-trees.jpg "Trees")
 
+# 메인 컨텐츠 부분 - 제일 중요
 content:
-  - title: Projects # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
+  - title: Projects # Title for the section 최상단 제목
+    layout: list # Type of content section (list/text) 레이아웃 형식
+    content: # 내부 컨텐츠
       - layout: left
         border: weak  # Value of `weak` will display a weak border below this item. # Any 
                       # other value (or no value) means no border will be displayed
